@@ -1,0 +1,23 @@
+{
+    "name": "juanber84/ProfilercommandBundle",
+    "type": "symfony-bundle",
+    "description": "This Bundle provides some commands tools in your Symfonyprofiler.",
+    "keywords": ["profiler", "command", "symfony"],
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "authors": [{
+            "name": "Juan Berzal",
+            "homepage": "http://juanberzal.com/",
+            "email": "juanber84@gmail.com"
+        }],
+    "require": {
+        "php": ">=5.3.2",
+        "symfony/framework-bundle": ">=2.0.0",
+    },
+    "autoload": {
+        "psr-0": {
+            "Juanber84\\Bundle\\ProfilercommandBundle": ""
+        }
+    },
+    "target-dir": "Juanber84/Bundle/ProfilercommandBundle"
+}
