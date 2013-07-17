@@ -1,0 +1,8 @@
+parameters:
+#    juanber84_profilercommand.example.class: Juanber84\Bundle\ProfilercommandBundle\Example
+
+services:
+    data_collector.memory:
+        class: Juanber84\Bundle\ProfilercommandBundle\DataCollector\MemoryDataCollector
+        tags:
+            - { name: data_collector, template: "Juanber84ProfilercommandBundle:Collector:command.html.twig", id: "memory"  }

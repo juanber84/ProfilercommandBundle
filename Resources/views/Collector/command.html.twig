@@ -1,0 +1,65 @@
+{% extends '@WebProfiler/Profiler/layout.html.twig' %}
+
+{% block toolbar %}
+    {% set icon %}
+        <img width="16" height="28" alt="Time" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAcCAYAAABoMT8aAAABqUlEQVR42t2Vv0sCYRyHX9OmEhsMx/YKGlwLQ69DTEUSBJEQEy5J3FRc/BsuiFqEIIcQIRo6ysUhoaBBWhoaGoJwiMJLglRKrs8bXgienmkQdPDAwX2f57j3fhFJkkbiPwTK5bIiFoul3kmPud8MqKMewDXpwuGww+12n9hsNhFnlijYf/Z4PDmO45Yxo+10ZFGTyWRMEItU6AdCx7lczkgd6n7J2Wx2xm63P6jJMk6n80YQBBN1aUDv9XqvlAbbm2LE7/cLODRB0un0VveAeoDC8/waCQQC18MGQqHQOcEKvw8bcLlcL6TfYnVtCrGRAlartUUYhmn1jKg/E3USjUYfhw3E4/F7ks/nz4YNFIvFQ/ogbUYikdefyqlU6gnuOg2YK5XKvs/n+xhUDgaDTVEUt+HO04ABOBA5isViDTU5kUi81Wq1AzhWMEkDGmAEq2C3UCjcYXGauDvfEsuyUjKZbJRKpVvM8IABU9SVX+cxYABmwIE9cFqtVi9xtgvsC2AHbIAFoKey0gdlHEyDObAEWLACFsEsMALdIJ80+dK0bTS95v7+v/AJnis0eO906QwAAAAASUVORK5CYII=">
+        <span>Command</span>
+    {% endset %}
+    {% set text %}
+		<div class="sf-toolbar-info-piece">
+            <b>Cache clear</b>
+            <span><a href="/app_dev.php/proccess/cache:clear">Push</a></span>
+        </div>    
+
+		<div class="sf-toolbar-info-piece">
+            <b>Assets install</b>
+            <span><a href="/app_dev.php/proccess/assetic:dump" >Push</a></span>
+        </div>         
+    
+		<div class="sf-toolbar-info-piece">
+            <b>Schema update</b>
+            <span><a href="/app_dev.php/proccess/doctrine:schema:update --force">Push</a></span>
+        </div>        
+
+    {% endset %}
+    {% include '@WebProfiler/Profiler/toolbar_item.html.twig' with { 'link': profiler_url } %}
+{% endblock %}
+
+{% block menu %}
+<span class="icon"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAARCQAAEQkBwOWiGAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAHGSURBVFiF7Zc/aBNRGMB/35kcLTR1zCIhZC+U3KO+bAaHdFAHO3btIHQqXVw6FDp0qE6Co7MRQRCHIiWzcCRIF4eA6dS5nKB4HF8HX0obkguIdyfoBwf3vXfvfj/eP/hEVSkyvELpQAlARKTZbHZExABLGTO/qWrY7/ePVVWl1WotxnH8XlXvZwy+ESJyUi6XH96qVquHwGaecBeNJEkWPGCjAPg4NjygXqBA/e84BS76wGlO3BWgOSnwJgzDwzzoxpinY4HCl6BwgdK0RmPMCrDPL8HzSqWy0+v1fmQhMHUGwjA8BT4Cj4AnURS9a7fbC7kJOImXwDagQCcridQ9kIfE3E3oJJ67tBNF0YtcBYwxd4Etl54lSXLwJwWmnoIJ+DFw28HvDQaD0bg/CILHIrI2Y/iw0Wi86na7yW8JzINba++IyNu0nw+Hw6/ASdo3U5fA3QOvXfplEg5Qq9XOgQ/AxYznk+d5n9PgMGMG3D1QTxvopvbBPMC8KPwq/i9wXUBy5F6xPGAEICLr1trlrMnW2mURWXfpSIIgOAJ2XcNP4HvGDouA796flXzf34vjeNUVJv61zkzDFSZ7oqrFlmb/fHV8CVJlrE261K+wAAAAAElFTkSuQmCC" alt="Events"></span>
+
+	<span class="label">
+    <strong>Terminal</strong>
+
+    
+</span>
+{% endblock %}
+
+{% block panel %}
+    <h2>Terminal</h2>
+	<table>
+	    <thead>
+	        <tr>
+	            <th scope="col">Command</th>
+	            <th scope="col">Accion</th>
+	        </tr>
+	    </thead>
+	    <tbody >
+			<tr>
+				<th>cache:clear</th>
+				<td><a href="/app_dev.php/proccess/cache:clear"> Push</a></td>
+			</tr>
+			<tr>
+				<th>assets:install</th>
+				<td><a href="/app_dev.php/proccess/assets:install"> Push</a></td>
+			</tr>
+			<tr>
+				<th>doctrine:schema:update</th>
+				<td><a href="/app_dev.php/proccess/doctrine:schema:update --force">Push</a></td>
+			</tr>
+	    </tbody>
+	</table>
+{% endblock %}
+
+
+
