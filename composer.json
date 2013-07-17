@@ -1,5 +1,5 @@
 {
-    "name": "juanber84/ProfilercommandBundle",
+    "name": "juanber84/profilercommand-bundle",
     "type": "symfony-bundle",
     "description": "This Bundle provides some commands tools in your Symfonyprofiler.",
     "keywords": ["profiler", "command", "symfony"],
