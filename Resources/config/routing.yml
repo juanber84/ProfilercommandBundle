@@ -1,6 +1,3 @@
-juanber84_profilercommand_index:
-    pattern:  /
-    defaults: { _controller: Juanber84ProfilercommandBundle:Command:index }
 juanber84_profilercommand_execute:
     pattern:  /proccess/{command}
     defaults: { _controller: Juanber84ProfilercommandBundle:Command:execute }
