@@ -11,6 +11,12 @@ use Symfony\Component\HttpFoundation\RedirectResponse;
 
 class CommandController extends Controller
 {
+
+    public function indexAction()
+    {
+        return array();
+    }
+
     public function executeAction($command, Request $request)
     {
 		$kernel = $this->get('kernel');
