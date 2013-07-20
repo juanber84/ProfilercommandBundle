@@ -3,6 +3,8 @@ ProfilercommandBundle
 
 Commands tools in your Symfonyprofiler
 
+![alt text](http://juanber84.pusku.com/recursos/pantallazo.png "Title")
+
 Add in your composer.json
 
     {
