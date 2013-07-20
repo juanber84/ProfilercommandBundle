@@ -3,7 +3,7 @@ ProfilercommandBundle
 
 Commands tools in your Symfonyprofiler
 
-![alt text](http://juanber84.pusku.com/recursos/pantallazo.png "Title")
+![alt text](http://juanber84.pusku.com/recursos/pantallazo.png "ProfilercommandBundle")
 
 Add in your composer.json
 
