@@ -8,17 +8,17 @@
     {% set text %}
 		<div class="sf-toolbar-info-piece">
             <b>Cache clear</b>
-            <span><a href="/app_dev.php/proccess/cache:clear">Push</a></span>
+            <span class="sf-toolbar-status sf-toolbar-status-green"><a href="/app_dev.php/proccess/cache:clear">Push</a></span>
         </div>    
 
 		<div class="sf-toolbar-info-piece">
             <b>Assets install</b>
-            <span><a href="/app_dev.php/proccess/assetic:dump" >Push</a></span>
+            <span class="sf-toolbar-status sf-toolbar-status-green"><a href="/app_dev.php/proccess/assetic:dump" >Push</a></span>
         </div>         
     
 		<div class="sf-toolbar-info-piece">
             <b>Schema update</b>
-            <span><a href="/app_dev.php/proccess/doctrine:schema:update --force">Push</a></span>
+            <span class="sf-toolbar-status sf-toolbar-status-green"><a href="/app_dev.php/proccess/doctrine:schema:update --force">Push</a></span>
         </div>        
 
     {% endset %}
