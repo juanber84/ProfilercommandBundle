@@ -1,5 +1,5 @@
-ProfilercommandBundle
-=====================
+ProfilercommandBundle -- ALPHA VERSION
+======================================
 
 Commands tools in your Symfonyprofiler
 
