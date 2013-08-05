@@ -33,7 +33,7 @@ Add in your app/routing.yml
       resource: "@Juanber84ProfilercommandBundle/Resources/config/routing.yml"
       prefix: /
 
-Your parameters.yml will be
+Your parameters.yml must will be...
 
     parameters:
         // ...
