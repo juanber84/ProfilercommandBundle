@@ -15,7 +15,7 @@ class CommandController extends Controller
     {
         $pieces = explode('.',$command);
         $finalcommand =  $this->container->getParameter($pieces[0]); 
-        $finalcommand = $finalcommand[$pieces[1]][$pieces[2]];
+        $finalcommand = $finalcommand[$pieces[1]][$pieces[2]]['command'];
 	    $kernel = $this->get('kernel');
         $application = new \Symfony\Bundle\FrameworkBundle\Console\Application($kernel);
         $application->setAutoExit(false);

@@ -3,6 +3,7 @@ parameters:
 
 services:
     data_collector.memory:
-        class: Juanber84\Bundle\ProfilercommandBundle\DataCollector\MemoryDataCollector
+        class: Juanber84\Bundle\ProfilercommandBundle\DataCollector\CommandDataCollector
+        arguments: [%profilercommand%]
         tags:
-            - { name: data_collector, template: "Juanber84ProfilercommandBundle:Collector:command.html.twig", id: "memory"  }
+            - { name: data_collector, template: "Juanber84ProfilercommandBundle:Collector:command.html.twig", id: "command"  }

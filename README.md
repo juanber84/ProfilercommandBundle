@@ -37,11 +37,26 @@ Your parameters.yml must will be...
 
     parameters:
         // ...
+        // ...
+        // ...                
         profilercommand:
             front:
-                cacheclear: cache:clear
-                assetsinstall: assets:install /Users/juanberzal/Desktop/Symfony/web
-                schemaupdate: doctrine:schema:update --force
+                cacheclear: 
+                    name: cache:clear
+                    command: cache:clear
+                assetsinstall: 
+                    name: assets:install
+                    command: assets:install /Users/juanberzal/Desktop/Symfony/web  
+                schemaupdate: 
+                    name: schema:update
+                    command: doctrine:schema:update --force
+                dump: 
+                    name: dump
+                    command: assetic:dump
             profiler:
-                cacheclear: cache:clear
-                assetsinstall: assets:install /Users/juanberzal/Desktop/Symfony/web  
+                cacheclear: 
+                    name: cache:clear
+                    command: cache:clear
+                assetsinstall: 
+                    name: assets:install
+                    command: assets:install /Users/juanberzal/Desktop/Symfony/web   
