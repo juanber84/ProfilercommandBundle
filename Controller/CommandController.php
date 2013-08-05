@@ -13,10 +13,13 @@ class CommandController extends Controller
 {
     public function executeAction($command, Request $request)
     {
-	$kernel = $this->get('kernel');
+        $pieces = explode('.',$command);
+        $finalcommand =  $this->container->getParameter($pieces[0]); 
+        $finalcommand = $finalcommand[$pieces[1]][$pieces[2]];
+	    $kernel = $this->get('kernel');
         $application = new \Symfony\Bundle\FrameworkBundle\Console\Application($kernel);
         $application->setAutoExit(false);
-        $input = new \Symfony\Component\Console\Input\StringInput($command);
+        $input = new \Symfony\Component\Console\Input\StringInput($finalcommand);
         $application->run($input);
         $referer = $request->headers->get('referer');
         return new RedirectResponse($referer);

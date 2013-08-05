@@ -33,3 +33,15 @@ Add in your app/routing.yml
       resource: "@Juanber84ProfilercommandBundle/Resources/config/routing.yml"
       prefix: /
 
+Your parameters.yml will be
+
+    parameters:
+        // ...
+        profilercommand:
+            front:
+                cacheclear: cache:clear
+                assetsinstall: assets:install /Users/juanberzal/Desktop/Symfony/web
+                schemaupdate: doctrine:schema:update --force
+            profiler:
+                cacheclear: cache:clear
+                assetsinstall: assets:install /Users/juanberzal/Desktop/Symfony/web  
