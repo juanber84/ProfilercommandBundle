@@ -1,7 +1,8 @@
-ProfilercommandBundle -- ALPHA VERSION
+ProfilercommandBundle -- MASTER VERSION
 ======================================
 
-Commands tools in your Symfonyprofiler
+Commands tools in your Symfonyprofiler. This is de master version, it can be unstable.
+You must user me 1.0 version (stable).
 
 ![alt text](http://juanber84.pusku.com/recursos/pantallazo.png "ProfilercommandBundle")
 
