@@ -9,7 +9,7 @@ Add in your composer.json
 
     {
         "require": {
-            "juanber84/profilercommand-bundle": "dev-master"
+            "juanber84/profilercommand-bundle": "1.0.*@dev"
         }
     }
 
