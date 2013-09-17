@@ -1,7 +1,7 @@
-ProfilercommandBundle -- ALPHA VERSION
+ProfilercommandBundle -- 1.0 VERSION
 ======================================
 
-Commands tools in your Symfonyprofiler
+Commands tools in your Symfonyprofiler. First stable version.
 
 ![alt text](http://juanber84.pusku.com/recursos/pantallazo.png "ProfilercommandBundle")
 
