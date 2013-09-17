@@ -11,7 +11,7 @@
 	    		{% for name,elements in sections %}
 					<div class="sf-toolbar-info-piece">
 			            <b>{{elements.name}}</b>
-			            <span class="sf-toolbar-status sf-toolbar-status-green"><a style="text-decoration: none; color: #fff; font-weight:bold;" href="/app_dev.php/proccess/profilercommand.{{key}}.{{name}}">Push</a></span>
+			            <span class="sf-toolbar-status sf-toolbar-status-green"><a style="text-decoration: none; color: #fff; font-weight:bold;" href="{{path('juanber84_profilercommand_execute',{'command':'profilercommand.'~key~'.'~name})}}">Push</a></span>
 			        </div>  
 	    		{% endfor %}
 	    	{% endif %}
@@ -42,18 +42,18 @@
 	        </tr>
 	    </thead>
 	    <tbody >
-			<tr>
-				<th>cache:clear</th>
-				<td><a href="/app_dev.php/proccess/profilercommand.front.cacheclear"> Push</a></td>
-			</tr>
-			<tr>
-				<th>assets:install</th>
-				<td><a href="/app_dev.php/proccess/profilercommand.front.assetsinstall"> Push</a></td>
-			</tr>
-			<tr>
-				<th>doctrine:schema:update</th>
-				<td><a href="/app_dev.php/proccess/profilercommand.front.schemaupdate">Push</a></td>
-			</tr>
+
+	    	{% for key, sections in collector.getProfile %}
+		    	{% if key == 'profiler' %}
+		    		{% for name,elements in sections %}
+		    			<tr>
+							<th>{{elements.name}}</th>
+							<td><a href="{{path('juanber84_profilercommand_execute',{'command':'profilercommand.'~key~'.'~name})}}"> Push</a></td>
+						</tr>
+		    		{% endfor %}
+		    	{% endif %}
+	    	{% endfor %}	    	
+
 	    </tbody>
 	</table>
 {% endblock %}
