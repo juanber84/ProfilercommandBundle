@@ -15,17 +15,19 @@ Add in your composer.json
 
 Add in your app/AppKernel.php
 
-    <?php
+```php
+<?php
 
-      // app/AppKernel.php
-      public function registerBundles()
-      {
-        return array(
-          // ...
-          new Juanber84\Bundle\ProfilercommandBundle\Juanber84ProfilercommandBundle(),
-          // ...
-          );
-      }
+   // app/AppKernel.php
+   public function registerBundles()
+   {
+     return array(
+       // ...
+       new Juanber84\Bundle\ProfilercommandBundle\Juanber84ProfilercommandBundle(),
+       // ...
+       );
+   }
+```
 
 Add in your app/routing.yml
 
