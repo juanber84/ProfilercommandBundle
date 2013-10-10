@@ -5,7 +5,6 @@ namespace Juanber84\Bundle\ProfilercommandBundle\DataCollector;
 use Symfony\Component\HttpKernel\DataCollector\DataCollector;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
-//use Symfony\Bundle\FrameworkBundle\Command\ContainerAwareCommand;
 
 class CommandDataCollector extends DataCollector
 {
