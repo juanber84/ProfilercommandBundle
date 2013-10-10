@@ -1,6 +1,5 @@
-ProfilercommandBundle -- 1.0 VERSION
-======================================
-
+ProfilercommandBundle -- 1.0
+============================
 Commands tools in your Symfonyprofiler. First stable version.
 
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/f309f5a9-77c1-464c-ae6c-587ec91f60cc/big.png)](https://insight.sensiolabs.com/projects/f309f5a9-77c1-464c-ae6c-587ec91f60cc)
