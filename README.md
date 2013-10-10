@@ -3,6 +3,8 @@ ProfilercommandBundle -- 1.0 VERSION
 
 Commands tools in your Symfonyprofiler. First stable version.
 
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/f309f5a9-77c1-464c-ae6c-587ec91f60cc/big.png)](https://insight.sensiolabs.com/projects/f309f5a9-77c1-464c-ae6c-587ec91f60cc)
+
 ![alt text](http://juanber84.pusku.com/recursos/pantallazo.png "ProfilercommandBundle")
 
 Add in your composer.json
