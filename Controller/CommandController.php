@@ -4,8 +4,8 @@ namespace Juanber84\Bundle\ProfilercommandBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Bundle\FrameworkBundle\Console\Application as App;
-use Symfony\Component\Console\Tester\CommandTester;
-use Symfony\Component\Process\ProcessBuilder;
+//use Symfony\Component\Console\Tester\CommandTester;
+//use Symfony\Component\Process\ProcessBuilder;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 
