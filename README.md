@@ -2,6 +2,7 @@ ProfilercommandBundle -- DEV
 ============================
 
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/f309f5a9-77c1-464c-ae6c-587ec91f60cc/big.png)](https://insight.sensiolabs.com/projects/f309f5a9-77c1-464c-ae6c-587ec91f60cc)
+[![knpbundles.com](http://knpbundles.com/juanber84/ProfilercommandBundle/badge)](http://knpbundles.com/juanber84/ProfilercommandBundle)
 
 Commands tools in your Symfonyprofiler. This is the master version, it can be unstable.
 You must user me [1.0 version ](https://github.com/juanber84/ProfilercommandBundle/tree/1.0 "stable version") (stable).
